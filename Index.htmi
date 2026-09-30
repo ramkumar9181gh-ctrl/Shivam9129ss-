@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Copy Prompt</title>
+</head>
+<body>
+
+<p id="prompt">Create a high-end cinematic gaming poster using the uploaded gaming character and gaming profile as reference. Keep the exact same outfit, hairstyle, body shape, mask, accessories, shoes, and overall character appearance from the uploaded character image. Also use the uploaded gaming profile UI naturally in the background design. Make the character stand in a powerful villain-style warrior pose with strong attitude and dominance. One hand should hold a large glowing energy sword with intense red neon effects and electric particles. Write the name “_______” vertically on the sword in bold.</p>
+
+<button onclick="copyPrompt()">Copy Prompt</button>
+
+<script>
+function copyPrompt() {
+  const promptText = document.getElementById("prompt").innerText;
+  navigator.clipboard.writeText(promptText);
+  alert("Prompt copied to clipboard!");
+}
+</script>
+
+</body>
+</html>
